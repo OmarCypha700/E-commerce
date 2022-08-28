@@ -33,7 +33,7 @@ const handleClose = () => {
   return (
     <header id="header">
       <a href="/Home" className="logo">
-        <h1>Dex boutique</h1>
+        <h1>Dex Boutique</h1>
       </a>
 
       <nav>
