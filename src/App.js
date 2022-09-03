@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Cart, Home, Products } from './Components'
+import { Navbar, Cart, Products } from './Components'
 import { commerce } from "./lib/commerce";
 import { useEffect, useState } from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
