@@ -1,0 +1,46 @@
+
+    .card{
+        margin: 1rem 0rem;
+    }
+    .media{
+        width: 20%;
+    }
+    .cardContent{
+        display: flex;
+        justify-content: space-between;
+    }
+    .buttons{
+        display: flex;
+        align-items:center;  
+    }
+
+    .remove__btn{
+        background-color: white;
+        border: 1px solid #dda823;
+        color: #dda823;
+    }
+
+    .quantity{
+        font-size: 1.5rem;
+    }
+
+
+    @media screen and (min-width:768px) {
+        .item__name{
+            font-size: 1.4rem;
+        }
+
+        .quantity{
+            font-size: 2rem;
+        }
+    }
+
+    @media screen and (min-width: 980px) {
+        .item__name{
+            font-size: 1.5rem;
+        }
+
+        .media{
+            width: 15%;
+        }
+    }

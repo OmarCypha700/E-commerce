@@ -3,12 +3,12 @@ import CloseIcon from '@mui/icons-material/Close';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
 import React from 'react';
+import {Link, useLocation} from 'react-router-dom'
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
 
-
-
+const location = useLocation();
 
 const handleMenu = () => {
     const menu = document.getElementById("menu");
@@ -30,43 +30,50 @@ const handleClose = () => {
     }
 }
 
+// if(!cart.total_items) return "loading..."
+
   return (
     <header id="header">
-      <a href="/Home" className="logo">
+      <Link to="/" className="logo">
         <h1>Dex Boutique</h1>
-      </a>
+      </Link>
 
       <nav>
         <ul id="navbar">
           <li>
-            <a className="active" href="/Home">
+            <Link to="/" className="active" >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/Shop">Shop</a>
+            <Link to="/shop">Shop</Link>
           </li>
           <li>
-            <a href="/About">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/Contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
-          <li>
-            <a id='cart' href="/Cart">
-              <Badge badgeContent={2} color="primary">
+            <li>
+            {location.pathname === '/' && (
+            <Link to="/cart" id='cart'>
+              <Badge badgeContent={cart.total_items} color="primary">
                 <ShoppingCartIcon />
               </Badge>
-            </a>
-          </li>
+            </Link>)}
+            </li>
+         
           <CloseIcon id='close' fontSize="large" onClick={handleClose}></CloseIcon>
         </ul>
       </nav>
 
       <div id="mobile">
-        <Badge id='cart__mobile' badgeContent={2} color="primary">
+      {location.pathname === '/' && (
+        <Link to="/cart">
+        <Badge id='cart__mobile' badgeContent={cart.total_items} color="primary">
           <ShoppingCartIcon  className='cart' />
         </Badge>
+        </Link>)}
         <MenuIcon id='menu' className="menu"fontSize="large" onClick={handleMenu} ></MenuIcon>
       </div>
     </header>
