@@ -16,12 +16,12 @@ const CartItem = ({item, onUpdateCartQty, onRemoveFromCart}) => {
         <CardActions className="cardActions">
 
             <div className="buttons">
-                <Button type='button' size='large' className="quantity" onClick={() => onUpdateCartQty(item.id, item.quantity - 1)}>-</Button>
+                <Button type='button' size='large' className="quantity" onClick={() => onUpdateCartQty(item?.id, item?.quantity - 1)}>-</Button>
                 <Typography>{item.quantity}</Typography>
-                <Button type='button' size='large' className="quantity" onClick={() => onUpdateCartQty(item.id, item.quantity + 1)}>+</Button>
+                <Button type='button' size='large' className="quantity" onClick={() => onUpdateCartQty(item?.id, item?.quantity + 1)}>+</Button>
             </div>
 
-            <button variant="contained" type='button' size='small' className='remove__btn' onClick={()=> onRemoveFromCart(item.id)}>Remove</button>
+            <button variant="contained" type='button' size='small' className='remove__btn' onClick={()=> onRemoveFromCart(item?.id)}>Remove</button>
 
         </CardActions>
     </Card>

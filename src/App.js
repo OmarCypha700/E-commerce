@@ -22,27 +22,19 @@ const App = () => {
       }
 
     const addToCart = async (productId, quantity) => {
-      const {cart} = await commerce.cart.add(productId, quantity);
-
-      setCart(cart);
+      setCart(await commerce.cart.add(productId, quantity))
     }
 
     const handleUpdateCartQty = async (productId, quantity) => {
-      const {cart} = await commerce.cart.update(productId, { quantity });
-
-      setCart(cart);
+      setCart(await commerce.cart.update(productId, { quantity }));
     }
 
     const handleRemoveFromCart = async (productId) => {
-      const {cart} = await commerce.cart.remove(productId);
-
-      setCart(cart);
+      setCart(await commerce.cart.remove(productId));
     }
 
     const handleEmptyCart = async () => {
-      const {cart} = await commerce.cart.empty();
-
-      setCart(cart);
+      setCart(await commerce.cart.empty());
     }
 
 

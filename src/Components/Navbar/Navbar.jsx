@@ -57,7 +57,7 @@ const handleClose = () => {
             <li>
             {location.pathname === '/' && (
             <Link to="/cart" id='cart'>
-              <Badge badgeContent={cart.total_items} color="primary">
+              <Badge badgeContent={cart?.total_items} color="primary">
                 <ShoppingCartIcon />
               </Badge>
             </Link>)}
@@ -70,7 +70,7 @@ const handleClose = () => {
       <div id="mobile">
       {location.pathname === '/' && (
         <Link to="/cart">
-        <Badge id='cart__mobile' badgeContent={cart.total_items} color="primary">
+        <Badge id='cart__mobile' badgeContent={cart?.total_items} color="primary">
           <ShoppingCartIcon  className='cart' />
         </Badge>
         </Link>)}

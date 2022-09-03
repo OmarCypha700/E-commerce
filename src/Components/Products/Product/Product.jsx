@@ -16,8 +16,8 @@ const Product = ({ product, onAddToCart }) => {
             <h3>{product.price.formatted_with_symbol}</h3>
         </div>
         {/* <p dangerouslySetInnerHTML={{__html:product.description}}/> */}
-        <div className="card__action" onClick={() => onAddToCart(product.id, 1)}>
-            <AddShoppingCartIcon aria-label='Add to Cart'/>
+        <div className="card__action" >
+            <AddShoppingCartIcon aria-label='Add to Cart' onClick={() => onAddToCart(product?.id, 1)}/>
         </div>
            
     </div>
