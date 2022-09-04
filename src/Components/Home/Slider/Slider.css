@@ -78,7 +78,7 @@ button{
 
 /* Slider images */
 #first, #second, #third, #fourth{
-    background-image: url(./images/clothes/clothes1.jpg);
+    background-image: url(./clothes/clothes1.jpg);
     height: 60vh;
     width: 100%;
     background-size: contain;
@@ -91,16 +91,16 @@ button{
 }
 
 #second{
-    background-image: url(./images/shoes/sneaker2.jpg);
+    background-image: url(./shoes/sneaker2.jpg);
     color: white;
 }
 
 #third{
-    background-image: url(./images/clothes/clothes2.jpg);
+    background-image: url(./clothes/clothes2.jpg);
 }
 
 #fourth{
-    background-image: url(./images/shoes/leather2.jpg);
+    background-image: url(./shoes/leather2.jpg);
     color: rgb(241, 205, 139);
 }
 

@@ -55,7 +55,7 @@ const handleClose = () => {
             <Link to="/contact">Contact</Link>
           </li>
             <li>
-            {location.pathname === '/' && (
+            {location.pathname === "/shop" && (
             <Link to="/cart" id='cart'>
               <Badge badgeContent={cart?.total_items} color="primary">
                 <ShoppingCartIcon />
@@ -68,7 +68,7 @@ const handleClose = () => {
       </nav>
 
       <div id="mobile">
-      {location.pathname === '/' && (
+      {location.pathname === "/shop" && (
         <Link to="/cart">
         <Badge id='cart__mobile' badgeContent={cart?.total_items} color="primary">
           <ShoppingCartIcon  className='cart' />

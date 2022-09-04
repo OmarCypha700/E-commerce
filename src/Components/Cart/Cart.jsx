@@ -36,7 +36,7 @@ const Cart = ({cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart}
 
   return (
     <div className='container'>
-       <h1>Your ShoppingCart</h1> 
+       <h1>Your Shopping Cart</h1> 
        { !cart.line_items.length ? <EmptyCart/> : <FilledCart/> }
         </div>
   )

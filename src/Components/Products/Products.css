@@ -1,10 +1,10 @@
 .container{
-    width: 100%;
-    max-width: 80%;
+    width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 0 auto;
 }
 
+.cat__name{
+    padding: 1rem 2rem;
+}

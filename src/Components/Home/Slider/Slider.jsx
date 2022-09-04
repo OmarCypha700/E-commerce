@@ -1,19 +1,26 @@
 import React from 'react'
+import { useEffect } from 'react'
+import {Link} from 'react-router-dom'
 import "./Slider.css"
 
 
 const Slider = () => {
 
       // function for auto slider
-      let counter = 1;
-      setInterval(()=>{
-          document.getElementById("radio" + counter).checked = true;
-          counter++;
-          if(counter > 4){
-              counter = 1;
-          }
-      },5000)
+      const Slider = () =>{
+        let counter = 1;
+          setInterval(()=>{
+            document.getElementById("radio" + counter).checked = true;
+              counter++;
+              if(counter > 4){
+                  counter = 1;
+              }
+          },5000)
+      } 
       
+    useEffect(()=>{
+        Slider();
+    }, [])
 
   return (
 
@@ -32,28 +39,28 @@ const Slider = () => {
        <h2>Get amazing clothes</h2>
        <h1>At the chepest prices</h1>
        <h4>Save money while wearing quality</h4>
-       <button>Shop Now</button>
+       <Link to="/shop"><button>Shop Now</button></Link>
    </div>
 
    <div id='second' className="slide first">
        <h2>Get sleek sneakers</h2>
        <h1>At the chepest prices</h1>
        <h4>Save money while wearing quality</h4>
-       <button>Shop Now</button>
+       <Link to="/shop"><button>Shop Now</button></Link>
    </div>
 
    <div id='third' className="slide first">
        <h2>Get amazing clothes</h2>
        <h1>At the chepest prices</h1>
        <h4>Save money while wearing quality</h4>
-       <button>Shop Now</button>
+       <Link to="/shop"><button>Shop Now</button></Link>
    </div>
 
    <div id='fourth' className="slide first">
        <h2>Get amazing leather shoes</h2>
        <h1>At the chepest prices</h1>
        <h4>Save money while wearing quality</h4>
-       <button>Shop Now</button>
+       <Link to="/shop"><button>Shop Now</button></Link>
    </div>
    {/* slide images end */}
    
