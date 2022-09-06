@@ -1,16 +1,16 @@
 /* Slider */
-.slider__body{
+/* .slider__body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.slider{
+/* .slider{
     width: 100%;
     overflow: hidden;
-}
+} */
 
-.slides{
+/* .slides{
     width: 400%;
     display: flex;
 }
@@ -21,10 +21,10 @@
 
 .slide{
     transition: 2s;
-}
+} */
 
 /* manual slide nav */
-.nav__manual{
+/* .nav__manual{
     position: absolute;
     width: 80rem;
     margin-top: -40px;
@@ -63,7 +63,7 @@
 
 #radio4:checked~ .first{
     margin-left: -75%;
-}
+} */
 
 /* Shop now button */
 button{
@@ -77,22 +77,26 @@ button{
 }
 
 /* Slider images */
-#first, #second, #third, #fourth{
+#first{
     height: 60vh;
     width: 100%;
-    padding: 0 20rem;
+    padding:  0rem 20rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-}
 
-#first{
-    background-image: url(./clothes/clothes1.jpg);
-    background-size:contain;
+    background-image: url(./clothes/clothes3.jpg);
+    background-size:cover;
     background-position: center;
 }
 
+ /* #first{
+    background-image: url(./clothes/clothes3.jpg);
+    background-size:cover;
+    background-position: center;
+} */
+/*
 #second{
     background-image: url(./shoes/sneaker2.jpg);
     color: white;
@@ -111,7 +115,7 @@ button{
     color: rgb(241, 205, 139);
     background-size:contain;
     background-position: center;
-}
+} */
 
 .first > h1{
     font-size: 2rem;
