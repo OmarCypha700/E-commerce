@@ -123,32 +123,6 @@ button{
         padding: 0 15rem;
     }
 
-    /* #first{
-        background-image: url(./clothes/clothes1.jpg);
-        background-size:cover;
-        background-position: top 60% right ;
-    }
-    
-    #second{
-        background-image: url(./shoes/sneaker2.jpg);
-        color: white;
-        background-size:contain;
-        background-position: center left;
-    }
-    
-    #third{
-        background-image: url(./clothes/clothes2.jpg);
-        background-size:contain;
-        background-position: center;
-    }
-    
-    #fourth{
-        background-image: url(./shoes/leather2.jpg);
-        color: rgb(241, 205, 139);
-        background-size:contain;
-        background-position: center;
-    } */
-
     .nav__manual{
         left: 0%;
     }
@@ -158,32 +132,6 @@ button{
     #first, #second, #third, #fourth{
         height: 40vh;
         padding: 0 3rem;
-    }
-
-    #first{
-        background-image: url(./clothes/clothes1.jpg);
-        background-size:cover;
-        background-position: center ;
-    }
-    
-    #second{
-        background-image: url(./shoes/sneaker2.jpg);
-        color: white;
-        background-size:cover;
-        background-position: center;
-    }
-    
-    #third{
-        background-image: url(./clothes/clothes2.jpg);
-        background-size:cover;
-        background-position: center;
-    }
-    
-    #fourth{
-        background-image: url(./shoes/leather2.jpg);
-        color: rgb(241, 205, 139);
-        background-size:cover;
-        background-position: center;
     } 
 
     .nav__manual{
