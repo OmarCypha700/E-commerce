@@ -1,69 +1,10 @@
-/* Slider */
-/* .slider__body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
-/* .slider{
-    width: 100%;
-    overflow: hidden;
-} */
-
-/* .slides{
-    width: 400%;
-    display: flex;
+strong{
+    /* text-decoration: underline wavy 3px #dda823; */
+    color: white; /*rgb(232, 230, 226)*/
+    font-weight: 600;
+    outline: 3px solid #dda823;
 }
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    transition: 2s;
-} */
-
-/* manual slide nav */
-/* .nav__manual{
-    position: absolute;
-    width: 80rem;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-    left: 20%;
-}
-
-.manual__btn{
-    border: 2px solid #dda823;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.manual__btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual__btn:hover{
-    background: #dda823;
-}
-
-#radio1:checked~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked~ .first{
-    margin-left: -50%;
-}
-
-#radio4:checked~ .first{
-    margin-left: -75%;
-} */
 
 /* Shop now button */
 button{
@@ -91,54 +32,20 @@ button{
     background-position: center;
 }
 
- /* #first{
-    background-image: url(./clothes/clothes3.jpg);
-    background-size:cover;
-    background-position: center;
-} */
-/*
-#second{
-    background-image: url(./shoes/sneaker2.jpg);
-    color: white;
-    background-size:contain;
-    background-position:center left;
-}
-
-#third{
-    background-image: url(./clothes/clothes2.jpg);
-    background-size:contain;
-    background-position: center;
-}
-
-#fourth{
-    background-image: url(./shoes/leather2.jpg);
-    color: rgb(241, 205, 139);
-    background-size:contain;
-    background-position: center;
-} */
-
 .first > h1{
     font-size: 2rem;
 }
 
 @media (min-width:760px) {
-    #first, #second, #third, #fourth{
+    #first{
         height: 40vh;
         padding: 0 15rem;
-    }
-
-    .nav__manual{
-        left: 0%;
     }
 }
 
 @media (max-width:480px) {
-    #first, #second, #third, #fourth{
+    #first{
         height: 40vh;
         padding: 0 3rem;
     } 
-
-    .nav__manual{
-    width: 300px;
-    }
 }
