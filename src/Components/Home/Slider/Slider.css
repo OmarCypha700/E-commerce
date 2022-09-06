@@ -163,14 +163,14 @@ button{
     #first{
         background-image: url(./clothes/clothes1.jpg);
         background-size:cover;
-        background-position: top 60% right ;
+        background-position: center ;
     }
     
     #second{
         background-image: url(./shoes/sneaker2.jpg);
         color: white;
         background-size:cover;
-        background-position: center left;
+        background-position: center;
     }
     
     #third{
