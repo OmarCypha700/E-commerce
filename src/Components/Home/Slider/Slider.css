@@ -26,7 +26,7 @@
 /* manual slide nav */
 .nav__manual{
     position: absolute;
-    width: 800px;
+    width: 80rem;
     margin-top: -40px;
     display: flex;
     justify-content: center;
