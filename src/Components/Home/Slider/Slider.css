@@ -32,17 +32,16 @@ button{
     background-position: center;
 }
 
-.first > h1{
-    font-size: 2rem;
+#first > h1{
+    padding: 1rem 0;
 }
 
 @media (min-width:760px) {
     #first{
-        height: 40vh;
-        padding: 0 15rem;
+        height: 50vh;
+        padding: 0rem 13rem;
     }
 }
-
 @media (max-width:480px) {
     #first{
         height: 40vh;
