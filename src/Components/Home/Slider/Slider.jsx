@@ -12,7 +12,7 @@ const Slider = () => {
     <div id='first'>
         <h2>Get amazing <strong>clothes</strong> and <strong>shoes</strong></h2>
         <h1>At the <strong>chepest price</strong> </h1>
-        <h4>Save money while wearing quality</h4>
+        <h3>Save money while wearing quality</h3>
         <Link to="/shop"><button>Shop Now</button></Link>
     </div>
 
