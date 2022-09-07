@@ -11,6 +11,11 @@
    margin: 0 auto;
 }
 
+.empty__container{
+    width:90%;
+   margin: 0 auto;
+}
+
 .cart__details{
     display: flex;
     flex-direction: column;

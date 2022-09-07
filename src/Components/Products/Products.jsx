@@ -1,12 +1,13 @@
 import React from "react";
 import {Grid, Container, Typography} from "@mui/material"
 import Product from "./Product/Product";
+import Spinner from "../Spinner"
 
 import "./Products.css";
 
 const Products = ({ categories, onAddToCart }) => {
   
-  if(!categories.length) return "Loading..."
+  if(!categories.length) return <Spinner/>
 
   return (
     <div> 

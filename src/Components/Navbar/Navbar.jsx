@@ -3,12 +3,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
 import React from 'react';
-import {Link, useLocation} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import './Navbar.css';
 
 const Navbar = ({cart}) => {
-
-const location = useLocation();
 
 const handleMenu = () => {
     const menu = document.getElementById("menu");
@@ -29,8 +27,6 @@ const handleClose = () => {
         })
     }
 }
-
-// if(!cart.total_items) return "loading..."
 
   return (
     <header id="header">
@@ -55,12 +51,12 @@ const handleClose = () => {
             <Link to="/contact">Contact</Link>
           </li>
             <li>
-            {location.pathname === "/shop" && (
+            
             <Link to="/cart" id='cart'>
               <Badge badgeContent={cart?.total_items} color="primary">
                 <ShoppingCartIcon />
               </Badge>
-            </Link>)}
+            </Link>
             </li>
          
           <CloseIcon id='close' fontSize="large" onClick={handleClose}></CloseIcon>
@@ -68,12 +64,12 @@ const handleClose = () => {
       </nav>
 
       <div id="mobile">
-      {location.pathname === "/shop" && (
+
         <Link to="/cart">
         <Badge id='cart__mobile' badgeContent={cart?.total_items} color="primary">
           <ShoppingCartIcon  className='cart' />
         </Badge>
-        </Link>)}
+        </Link>
         <MenuIcon id='menu' className="menu"fontSize="large" onClick={handleMenu} ></MenuIcon>
       </div>
     </header>

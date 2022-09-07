@@ -1,15 +1,18 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import CartItem from './CartItem/CartItem';
+import Spinner from "../Spinner"
 
 import "./Cart.css"
 
 const Cart = ({cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart}) => {
 
     const EmptyCart = () => (
+        <div className='empty__container'>
         <h3>You have no items in your shopping cart, start adding some!
             <Link to="/shop"> start adding some!</Link>
         </h3>
+        </div>
     );
 
     const FilledCart = () => (
@@ -32,7 +35,7 @@ const Cart = ({cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart}
         </>
     )
 
-    if(!cart.line_items) return "Loading ..."
+    if(!cart.line_items) return <Spinner/>
 
   return (
     <div className='container'>

@@ -1,7 +1,7 @@
 
 strong{
     /* text-decoration: underline wavy 3px #dda823; */
-    color: white; /*rgb(232, 230, 226)*/
+    color: white;
     font-weight: 600;
     outline: 3px solid #dda823;
 }
