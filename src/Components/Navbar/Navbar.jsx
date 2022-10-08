@@ -50,8 +50,8 @@ const handleClose = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-            <li>
-            
+
+            <li>  
             <Link to="/cart" id='cart'>
               <Badge badgeContent={cart?.total_items} color="primary">
                 <ShoppingCartIcon />
@@ -64,14 +64,16 @@ const handleClose = () => {
       </nav>
 
       <div id="mobile">
-
+        
         <Link to="/cart">
         <Badge id='cart__mobile' badgeContent={cart?.total_items} color="primary">
           <ShoppingCartIcon  className='cart' />
         </Badge>
         </Link>
+
         <MenuIcon id='menu' className="menu"fontSize="large" onClick={handleMenu} ></MenuIcon>
       </div>
+
     </header>
   );
 }

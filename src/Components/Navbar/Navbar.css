@@ -65,7 +65,11 @@
 
 /* Media query */
 
- @media (max-width:799px) { 
+@media screen and (max-width:480px) {
+    #header{
+        padding: 0.5rem 1rem;
+    }
+
     #navbar{
         display: flex;
         flex-direction: column;
@@ -75,7 +79,7 @@
         top: 0;
         right: -400px;
         height: 100vh;
-        width:350px ;
+        width:50% ;
         background-color: #dda823;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 8rem 0 0 5rem;
@@ -114,31 +118,11 @@
         display: initial;
         position: absolute;
         top: 1.5rem;
-        left: 14rem;
+        left: 1rem;
         color: #222;
     }
 
     #cart{
         display: none;
-    }
-} 
-
-@media (max-width:480px) {
-    #header{
-        padding: 0.5rem 1rem;
-    }
-
-    #navbar{
-        width:50% ;
-    }
-
-    #close{
-        top: 1rem;
-        left: 10rem;
-    }
-
-    #mobile > a{
-       color: #1a1a1a;
-    }
-
+    } 
 }
