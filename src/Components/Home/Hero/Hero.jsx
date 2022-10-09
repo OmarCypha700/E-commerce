@@ -1,15 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import "./Slider.css"
+import "./Hero.css"
 
 
-const Slider = () => {
+const Hero = () => {
 
   return (
 
    <section>
 
-    <div id='first'>
+    <div id='hero__section'>
         <h2>Get amazing <strong>clothes</strong> and <strong>shoes</strong></h2>
         <h1>At the <strong>chepest price</strong> </h1>
         <h3>Save money while wearing quality</h3>
@@ -20,4 +20,4 @@ const Slider = () => {
   )
 }
 
-export default Slider
+export default Hero

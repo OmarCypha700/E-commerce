@@ -1,4 +1,27 @@
 
+
+
+/* Hero images */
+#hero__section{
+    height: 60vh;
+    width: 100%;
+    padding:  0rem 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* position: relative;
+    top: 1; */
+
+    background-image: url(./clothes/clothes3.webp);
+    background-size:cover;
+    background-position: center;
+}
+
+#hero__section > h1{
+    padding: 0.7rem 0;
+}
+
 strong{
     /* text-decoration: underline wavy 3px #dda823; */
     color: white;
@@ -17,33 +40,14 @@ button{
     cursor: pointer;
 }
 
-/* Slider images */
-#first{
-    height: 60vh;
-    width: 100%;
-    padding:  0rem 20rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-    background-image: url(./clothes/clothes3.jpg);
-    background-size:cover;
-    background-position: center;
-}
-
-#first > h1{
-    padding: 0.7rem 0;
-}
-
 @media (min-width:760px) {
-    #first{
+    #hero__section{
         height: 50vh;
         padding: 0rem 13rem;
     }
 }
 @media (max-width:480px) {
-    #first{
+    #hero__section{
         height: 40vh;
         padding: 0 3rem;
     } 

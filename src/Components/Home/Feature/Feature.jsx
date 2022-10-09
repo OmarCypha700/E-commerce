@@ -1,10 +1,10 @@
 import React from 'react'
 
-import save from './illustrations/savings.png'
-import fastDelivery from './illustrations/fast-delivery1.png'
+import save from './illustrations/savings.webp'
+import fastDelivery from './illustrations/fast-delivery1.webp'
 import shopConvenient from './illustrations/shop-conveniently.gif'
 import saveTime from './illustrations/save-time.gif'
-import quality from './illustrations/quality.png'
+import quality from './illustrations/quality.webp'
 
 import "./Feature.css"
 

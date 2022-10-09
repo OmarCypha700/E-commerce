@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from "./Slider/Slider"
+import Hero from "./Hero/Hero"
 import Feature from "./Feature/Feature"
 
 import "./Home.css"
@@ -8,7 +8,7 @@ import "./Home.css"
 const Home = () => {
   return (
     <>
-<Slider/>
+<Hero/>
 <Feature/>
     </>
   )
