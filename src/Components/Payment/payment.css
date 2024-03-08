@@ -1,0 +1,35 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.payment{
+    margin: auto;
+    padding: 1rem 0rem;
+}
+
+#paymentForm{
+    width: 90%;
+}
+
+.form-group{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0rem;
+}
+
+.form-group > input{
+    width: 100%;
+    padding: 1rem;
+    outline: auto;
+    border-radius: .5rem;
+    font-size: large;
+}
+
+.form-group > label{
+    font-size: large;
+}

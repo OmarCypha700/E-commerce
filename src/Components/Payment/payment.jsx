@@ -30,9 +30,10 @@ const componentProps = {
 
 
     return (
-        <>
+        <div className="container">
+
             <div className="payment">
-                <h1>Payment</h1>
+                <h1>Payment Checkout</h1>
             </div>
 
             <form id="paymentForm">
@@ -51,15 +52,17 @@ const componentProps = {
                 </div>
                 <div class="form-group">
                     <label for="amount">Amount</label>
-                    <input type="tel" id="amount" value={cart.subtotal.formatted} required />
+                    <input type="numeric" id="amount" value={cart.subtotal.formatted} required />
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" onChange={(e)=> setPhonenumber(e.target.value)} required />
                 </div>
+                
             </form>
             <PaystackButton {...componentProps} />
-        </>
+            
+        </div>
     )
 }
 
