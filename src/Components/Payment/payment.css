@@ -32,4 +32,5 @@
 
 .form-group > label{
     font-size: large;
+    font-weight: bold;
 }
