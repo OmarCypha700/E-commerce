@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Home, Cart, Products, ProductView} from './Components'
+import { Navbar, Home, Cart, Products, ProductView, Payment} from './Components'
 import { commerce } from "./lib/commerce";
 import { useEffect, useState } from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
@@ -83,6 +83,12 @@ const App = () => {
         <Route exact path="/shop/product-view/:id" element={
           <ProductView
           onAddToCart={addToCart}/>
+          }/>
+
+        <Route exact path="/payment" element={
+          <Payment 
+          cart={cart}
+          handleEmptyCart={handleEmptyCart} />
           }/>
 
           <Route exact path="/" element={
